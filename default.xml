@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Remote definitions -->
+  <remote name="github" fetch="https://github.com/" />
+  <remote name="lineage" fetch="https://github.com/LineageOS/" />
+
+  <!-- Kernel (prebuilt) -->
+  <project path="device/xiaomi/spinel-kernel" name="device_xiaomi_spinel-kernel" remote="mkpromvp" revision="lineage-23.2" />
+
+  <!-- Device tree -->
+  <project path="device/xiaomi/spinel" name="android_device_xiaomi_spinel" remote="mkpromvp" revision="lineage-23.2" />
+
+  <!-- Vendor blobs -->
+  <project path="vendor/xiaomi/spinel" name="proprietary_vendor_xiaomi_spinel" remote="mkpromvp" revision="lineage-23.2" />
+
+  <!-- Hardware: Xiaomi -->
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="lineage" revision="lineage-23.2" />
+
+  <!-- Hardware: MediaTek -->
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="lineage" revision="lineage-23.2" />
+
+</manifest>
