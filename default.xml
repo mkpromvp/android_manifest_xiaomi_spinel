@@ -2,19 +2,54 @@
 <manifest>
 
   <!-- Remotes -->
-  <remote name="github" fetch="https://github.com/" />
-  <remote name="lineage" fetch="https://github.com/LineageOS/" />
+  <remote
+    name="github"
+    fetch="https://github.com/" />
 
-  <!-- Device tree -->
-  <project path="device/xiaomi/spinel" name="mkpromvp/android_device_xiaomi_spinel" remote="github" revision="lineage-23.2" />
+  <remote
+    name="lineage"
+    fetch="https://github.com/LineageOS/" />
 
-  <!-- Vendor blobs -->
-  <project path="vendor/xiaomi/spinel" name="mkpromvp/proprietary_vendor_xiaomi_spinel" remote="github" revision="lineage-23.2" />
+  <!-- Spinel Device Tree -->
+  <project
+    name="mkpromvp/android_device_xiaomi_spinel"
+    path="device/xiaomi/spinel"
+    remote="github"
+    revision="lineage-23.2" />
 
-  <!-- Hardware: Xiaomi -->
-  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="lineage" revision="lineage-23.2" />
+  <!-- Vendor Blobs -->
+  <project
+    name="mkpromvp/proprietary_vendor_xiaomi_spinel"
+    path="vendor/xiaomi/spinel"
+    remote="github"
+    revision="lineage-23.2" />
 
-  <!-- Hardware: MediaTek -->
-  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="lineage" revision="lineage-23.2" />
+  <!-- MTK Hardware -->
+  <project
+    name="LineageOS/android_hardware_mediatek"
+    path="hardware/mediatek"
+    remote="github"
+    revision="lineage-23.2" />
+
+  <!-- MTK Vendor SEPolicy -->
+  <project
+    name="LineageOS/android_device_mediatek_sepolicy_vndr"
+    path="device/mediatek/sepolicy_vndr"
+    remote="github"
+    revision="lineage-23.2" />
+
+  <!-- Xiaomi Hardware -->
+  <project
+    name="LineageOS/android_hardware_xiaomi"
+    path="hardware/xiaomi"
+    remote="github"
+    revision="lineage-23.2" />
+
+  <!-- LineageOS Signing Keys -->
+  <project
+    name="mkpromvp/lineage_vendor_keys"
+    path="vendor/lineage-priv/keys"
+    remote="github"
+    revision="main" />
 
 </manifest>
